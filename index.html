@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
   </head>
-  <body>
+  <body class="bg text-bg-light p3">
     <header>
       <div class="container text-center mb-5 mt-5">
         <h1 class="text-decoration-underline">Employee Table</h1>
@@ -17,13 +17,12 @@
         <div class="row">
           <div class="col-md">
             <form class="form-info mb-5">
-              <label for="first-name">First Name</label>
-              <input type="text" name="first-name" id="first-name" class="form-control" placeholder="Required" aria-label="First name" required/>
-              <label for="last-name">Last Name</label>
-              <input type="text" name="last-name" id="last-name" class="form-control" placeholder="Required" aria-label="Last name" required/>
-              <label for="dept">Deptartment:
-              </label>
-              <input type="text" name="dept" id="dept" class="form-control" placeholder="Required" aria-label="Dept" required/>
+              <label for="first-name" class="mb-1">First Name</label>
+              <input type="text" name="first-name" id="first-name" class="form-control fst-italic" placeholder="Required" aria-label="First name" required/>
+              <label for="last-name" class="mb-1 mt-3">Last Name</label>
+              <input type="text" name="last-name" id="last-name" class="form-control fst-italic" placeholder="Required" aria-label="Last name" required/>
+              <label for="dept" class="mb-1 mt-3">Deptartment:</label>
+              <input type="text" name="dept" id="dept" class="form-control fst-italic" placeholder="Required" aria-label="Dept" required/>
 
               <div class="d-grid gap-2 d-md-flex justify-content-md-end">
               <button type="submit" class="submit-btn btn btn-outline-danger mt-2 me-md2">Submit</button>
@@ -31,7 +30,7 @@
 
             </form>
           </div>
-          <div class="col-md">
+          <div class="col-md table-responsive">
             <table class="table-doc table table-dark table-striped-columns table-hover rounded">
               <thead class="table-light">
                 <tr>

@@ -6,32 +6,45 @@
     <title>Document</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
   </head>
+  <!-- Body: The Body class has a background color of light to off set the background from a flat white color -->
   <body class="bg text-bg-light p3">
     <header>
+      <!-- Container class Header -->
+      <!-- Using Bootstraps container class to align this class within the viewport. Also gave the top and bottom margins 5rem of spacing -->
       <div class="container text-center mb-5 mt-5">
+        <!-- H1: Used text decoration underline to underline the heading of the webpage -->
         <h1 class="text-decoration-underline">Employee Table</h1>
       </div>
     </header>
     <main>
+      <!-- Container class Main-->
       <div class="container">
+        <!-- Row class Div -->
         <div class="row">
+          <!-- First col Div-->
           <div class="col-md">
+            <!-- Form: Using the mb-5 class from bootstrap to give a bottom margin of 5rem -->
             <form class="form-info mb-5">
+              <!-- Labels and Inputs: All the labels tags have the mb-1 class to give a bottom margin of 1rem and, for the exception of the first label, labels have a mt-3 or top margin of 3rem. The Input classes have the form-control to give the bootstrap layout and the fst-italic class give italic styling to the font in the input field. Although the required attribute is added to the input it does not check as this stopped with Javascripts preventDefault() method on the button listener-->
               <label for="first-name" class="mb-1">First Name</label>
               <input type="text" name="first-name" id="first-name" class="form-control fst-italic" placeholder="Required" aria-label="First name" required/>
               <label for="last-name" class="mb-1 mt-3">Last Name</label>
               <input type="text" name="last-name" id="last-name" class="form-control fst-italic" placeholder="Required" aria-label="Last name" required/>
               <label for="dept" class="mb-1 mt-3">Deptartment:</label>
               <input type="text" name="dept" id="dept" class="form-control fst-italic" placeholder="Required" aria-label="Dept" required/>
-
+              <!-- Button: Using the flex styling of bootstrap I moved the button to the left of the container when the md field view hits and then used the btn-outline-danger class to give the button a red background and styling and then fill in the background when hovered over -->
               <div class="d-grid gap-2 d-md-flex justify-content-md-end">
               <button type="submit" class="submit-btn btn btn-outline-danger mt-2 me-md2">Submit</button>
               </div>
 
             </form>
+            <!-- /first col -->
           </div>
+          <!-- second col -->
           <div class="col-md table-responsive">
-            <table class="table-doc table table-dark table-striped-columns table-hover rounded">
+            <!-- Table: Using bootstraps table to format the table, then used table-dark to give the table a black and grey background color and text. The used the table-striped-columns to alternate the background color of each new tr added. Then added the table-hover to lighten the backgrounds opactiy of each row when hovered over-->
+            <table class="table-doc table table-dark table-striped-columns table-hover">
+              <!-- Thead: Using table light on the head of the table to lighten the header of the table and give some contrast -->
               <thead class="table-light">
                 <tr>
                   <th>Employee ID</th>
@@ -40,10 +53,14 @@
                   <th>Department:</th>
                 </tr>
               </thead>
+              <!-- Tbody: The table body is empty as this is where the data will be entered with JavaScript -->
               <tbody></tbody>
             </table>
+            <!-- /second col -->
           </div>
+          <!-- /row class -->
         </div>
+        <!-- /container class Main-->
       </div>
 
     </main>
